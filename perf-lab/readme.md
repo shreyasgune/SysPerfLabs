@@ -60,6 +60,8 @@ Load Gen complete
     // high cache miss rates means cache is being utilized poorly
     // high branch misses means inefficient branching in your code. Branches are if conditionals, function calls, jump statements etc.
     // minimizing branching complexity makes things a bit better cuz lesser the branches, lesser the chance of branch-misses
+    // we can generally interpret high IPC values (eg, over 1.0) as good, indicating optimal processing of work. However, also double check what the instructions are, 
+       in case this is due to a spin loop: a high rate of instructions, but a low rate of actual work completed.
 
 
       10.017952671 seconds time elapsed
